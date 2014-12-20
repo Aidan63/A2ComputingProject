@@ -7,16 +7,16 @@ System Requirements
 ===================
   Microsoft Windows
   -----------------
-    - Windows XP or higher
-    - 512mb or RAM
-    - 128mb GPU
+    * Windows XP or higher
+    * 512mb or RAM
+    * 128mb GPU
     
   Linux
   -----
-    - Ubuntu 14
-    - 512mb of RAM
-    - Open-GL compatible GPU with a valid driver
-    - Other distros not tested, if you are able to it would be great if you could say so in the Linux section of the wiki
+    * Ubuntu 14
+    * 512mb of RAM
+    * Open-GL compatible GPU with a valid driver
+    * Other distros not tested
 
 Compiling
 =========
