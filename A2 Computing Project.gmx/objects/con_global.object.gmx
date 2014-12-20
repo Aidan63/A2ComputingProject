@@ -28,8 +28,7 @@
             <string>
 randomize();
 
-//window_set_size(1280, 720);
-show_debug_overlay(true);
+show_debug_overlay(false);
 
 //Give sounds variables
 global.audio_effect_male1_playerPain     = snd_effect_male1_playerHit   ;

@@ -1,29 +1,4 @@
 
-if (keyboard_check_pressed(ord("1")))
-{
-    plyr_currentWep = wep_mg;
-}
-if (keyboard_check_pressed(ord("2")))
-{
-    plyr_currentWep = wep_sg;
-}
-if (keyboard_check_pressed(ord("3")))
-{
-    plyr_currentWep = wep_rl;
-}
-if (keyboard_check_pressed(ord("4")))
-{
-    plyr_currentWep = wep_gl;
-}
-if (keyboard_check_pressed(ord("5")))
-{
-    plyr_currentWep = wep_pg;
-}
-if (keyboard_check_pressed(ord("6")))
-{
-    plyr_currentWep = wep_rg;
-}
-
 var baseDir = 0;
 var xoffset = 0;
 if (plyr_xscale == 1)
@@ -404,4 +379,3 @@ switch (plyr_currentWep)
         }
     break;
 }
-
