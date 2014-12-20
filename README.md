@@ -20,8 +20,4 @@ System Requirements
 
 Compiling
 =========
-- Open the project in GameMaker Studio 1.4.1474 or above
-- Compile for your selected platform
-- Hope it works
-
-
+See the wiki page for compiling for you're desired platform
