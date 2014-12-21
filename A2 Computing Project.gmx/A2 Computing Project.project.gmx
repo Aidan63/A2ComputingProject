@@ -261,6 +261,9 @@
       <script>scripts\draw_results_screen.gml</script>
       <script>scripts\load_level.gml</script>
     </scripts>
+    <scripts name="Misc">
+      <script>scripts\os_is_desktop.gml</script>
+    </scripts>
   </scripts>
   <fonts name="fonts">
     <font>fonts\fnt_default</font>
