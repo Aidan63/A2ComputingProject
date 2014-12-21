@@ -37,4 +37,3 @@ global.playerVoiceArray[4, playerAudio_death1] = global.audio_effect_robot1_play
 global.playerVoiceArray[4, playerAudio_death2] = global.audio_effect_robot1_playerDeath2;
 global.playerVoiceArray[4, playerAudio_death3] = global.audio_effect_robot1_playerDeath3;
 global.playerVoiceArray[4, playerAudio_jump  ] = global.audio_effect_robot1_playerJump  ;
-

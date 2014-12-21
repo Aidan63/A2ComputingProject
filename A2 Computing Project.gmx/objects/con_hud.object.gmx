@@ -26,8 +26,6 @@
           <argument>
             <kind>1</kind>
             <string>
-display_set_gui_size(view_wview[0], view_hview[0]);
-
 countdown_number = 3;
 
 </string>

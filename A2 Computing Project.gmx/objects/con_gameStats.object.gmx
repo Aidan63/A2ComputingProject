@@ -49,81 +49,10 @@ for (var i = 0; i &lt; 5; i ++)
     globalStats[i, stat_gamePoints] = 0;
     globalStats[i, stat_shotAcc   ] = 0;
     globalStats[i, stat_railAcc   ] = 0;
-}
-
-globalStatsTotal_kills   = 0;
-globalStatsTotal_deaths  = 0;
-globalStatsTotal_points  = 0;
-globalStatsTotal_shotAcc = 0;
-globalStatsTotal_railAcc = 0;
-
-for (var i = 1; i &lt; 5; i ++)
-{
+    
     globalStats_teamScore[i] = 0;
 }
 
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="3" enumb="0">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>
-globalStatsTotal_kills = globalStats[1, stat_kills] + globalStats[2, stat_kills] + globalStats[3, stat_kills] + globalStats[4, stat_kills];
-
-</string>
-          </argument>
-        </arguments>
-      </action>
-    </event>
-    <event eventtype="8" enumb="64">
-      <action>
-        <libid>1</libid>
-        <id>603</id>
-        <kind>7</kind>
-        <userelative>0</userelative>
-        <isquestion>0</isquestion>
-        <useapplyto>-1</useapplyto>
-        <exetype>2</exetype>
-        <functionname></functionname>
-        <codestring></codestring>
-        <whoName>self</whoName>
-        <relative>0</relative>
-        <isnot>0</isnot>
-        <arguments>
-          <argument>
-            <kind>1</kind>
-            <string>/*
-draw_set_halign(0);
-draw_set_valign(0);
-draw_set_colour(c_white);
-
-for (var i = 1; i &lt; 5; i ++)
-{
-    draw_text(64, 64 + (i * 32), string(globalStats[i, stat_kills]) + " | " + string(globalStats[i, stat_deaths]) + " | " + string(globalStats[i, stat_shotsHit]) + " | " + string(globalStats[i, stat_shotsTotal]) + " | " + string(globalStats[i, stat_railsHit]) + " | " + string(globalStats[i, stat_railsTotal]) + " | " + string(globalStats[i, stat_gamePoints]));
-}
-
-for (var i = 1; i &lt; 8; i ++)
-{
-    draw_text(64, 512 + 64 + (i * 32), string(globalStats_teamScore[i]));
-}
-*/
 </string>
           </argument>
         </arguments>

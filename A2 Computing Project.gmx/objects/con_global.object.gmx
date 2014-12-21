@@ -31,6 +31,8 @@ randomize();
 show_debug_overlay(false);
 
 //Give sounds variables
+
+//Player sound effects
 global.audio_effect_male1_playerPain     = snd_effect_male1_playerHit   ;
 global.audio_effect_male1_playerDeath1   = snd_effect_male1_playerDeath1;
 global.audio_effect_male1_playerDeath2   = snd_effect_male1_playerDeath2;
@@ -117,7 +119,7 @@ switch (string(global.screen_width) + "x" + string(global.screen_height))
     default          : global.screen_preset = 6; break;
 }
 
-//Apply previous settings
+//Apply loaded settings
 window_set_size(global.screen_width, global.screen_height);
 
 window_set_fullscreen(global.screen_window);
