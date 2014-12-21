@@ -263,6 +263,7 @@
     </scripts>
     <scripts name="Misc">
       <script>scripts\os_is_desktop.gml</script>
+      <script>scripts\scale_canvas.gml</script>
     </scripts>
   </scripts>
   <fonts name="fonts">
