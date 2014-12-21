@@ -22,4 +22,9 @@ Compiling
 =========
 See the wiki page for compiling for you're desired platform
 
+Credits
+=======
+
+The project was originally created by Aidan Lee for his A2 computing class project.
+
 Sprites were created by reddit user /u/quepieces and he has allowed me to distribute them with this project, they do not fall under the MIT license that the code base is and he retains all copyright, this sprites cannot be redistributed without his permission.
