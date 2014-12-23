@@ -28,6 +28,33 @@
             <string>
 countdown_number = 3;
 
+gameHUD_drawBlue   = false;
+gameHUD_drawRed    = false;
+gameHUD_drawGreen  = false;
+gameHUD_drawYellow = false;
+
+for (var i = 1; i &lt; 5; i ++)
+{
+    switch (global.game_playerTeam[i])
+    {
+        case 1:
+            gameHUD_drawBlue = true;
+        break;
+        
+        case 2:
+            gameHUD_drawRed = true;
+        break;
+        
+        case 3:
+            gameHUD_drawGreen = true;
+        break;
+        
+        case 4:
+            gameHUD_drawYellow = true;
+        break;
+    }
+}
+
 </string>
           </argument>
         </arguments>
@@ -275,48 +302,60 @@ if (global.game_state == global.game_active)
     //Draw Team HUD Info
     
     //Blue Team
-    draw_set_halign(0);
-    draw_set_valign(1);
-    draw_set_colour(c_white);
-    
-    draw_set_font(fnt_roboto_25);
-    draw_text(32, 48, "Blue Team");
-    
-    draw_set_font(fnt_roboto_50);
-    draw_text(32, 96, con_gameStats.globalStats_teamScore[1]);
+    if (gameHUD_drawBlue == true)
+    {
+        draw_set_halign(0);
+        draw_set_valign(1);
+        draw_set_colour(c_white);
+        
+        draw_set_font(fnt_roboto_25);
+        draw_text(32, 48, "Blue Team");
+        
+        draw_set_font(fnt_roboto_50);
+        draw_text(32, 96, con_gameStats.globalStats_teamScore[1]);
+    }
     
     //Red Team
-    draw_set_halign(0);
-    draw_set_valign(1);
-    draw_set_colour(c_white);
-    
-    draw_set_font(fnt_roboto_25);
-    draw_text(512, 48, "Red Team");
-    
-    draw_set_font(fnt_roboto_50);
-    draw_text(512, 96, con_gameStats.globalStats_teamScore[2]);
+    if (gameHUD_drawRed == true)
+    {
+        draw_set_halign(0);
+        draw_set_valign(1);
+        draw_set_colour(c_white);
+        
+        draw_set_font(fnt_roboto_25);
+        draw_text(512, 48, "Red Team");
+        
+        draw_set_font(fnt_roboto_50);
+        draw_text(512, 96, con_gameStats.globalStats_teamScore[2]);
+    }
     
     //Green Team
-    draw_set_halign(2);
-    draw_set_valign(1);
-    draw_set_colour(c_white);
-    
-    draw_set_font(fnt_roboto_25);
-    draw_text(1408, 48, "Green Team");
-    
-    draw_set_font(fnt_roboto_50);
-    draw_text(1408, 96, con_gameStats.globalStats_teamScore[3]);
+    if (gameHUD_drawGreen == true)
+    {
+        draw_set_halign(2);
+        draw_set_valign(1);
+        draw_set_colour(c_white);
+        
+        draw_set_font(fnt_roboto_25);
+        draw_text(1408, 48, "Green Team");
+        
+        draw_set_font(fnt_roboto_50);
+        draw_text(1408, 96, con_gameStats.globalStats_teamScore[3]);
+    }
     
     //Yellow Team
-    draw_set_halign(2);
-    draw_set_valign(1);
-    draw_set_colour(c_white);
-    
-    draw_set_font(fnt_roboto_25);
-    draw_text(1888, 48, "Yellow Team");
-    
-    draw_set_font(fnt_roboto_50);
-    draw_text(1888, 96, con_gameStats.globalStats_teamScore[4]);
+    if (gameHUD_drawYellow == true)
+    {
+        draw_set_halign(2);
+        draw_set_valign(1);
+        draw_set_colour(c_white);
+        
+        draw_set_font(fnt_roboto_25);
+        draw_text(1888, 48, "Yellow Team");
+        
+        draw_set_font(fnt_roboto_50);
+        draw_text(1888, 96, con_gameStats.globalStats_teamScore[4]);
+    }
 }
 
 </string>
