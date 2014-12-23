@@ -138,126 +138,138 @@ if (global.game_state == global.game_active)
     //Draw Player HUD Info
     
     //Player 1 HUD stuff
-    if (instance_exists(obj_player1))
+    if (global.game_playerTeam[1] != 5)
     {
-        draw_set_halign(0);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(32, 921, string(obj_player1.plyr_health));
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(160, 936, string(obj_player1.weaponsSystem[obj_player1.plyr_currentWep, obj_player1.ammoNow]));
-        
-        draw_text(32, 976, con_game.player_name[1]);
-    }
-    else
-    {
-        draw_set_halign(0);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(32, 921, "0");
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(160, 936, "0");
-        
-        draw_text(32, 976, con_game.player_name[1]);
-    }
-    
-    if (instance_exists(obj_player2))
-    {
-        //Player 2 HUD stuff
-        draw_set_halign(0);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(512, 921, string(obj_player2.plyr_health));
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(640, 936, string(obj_player2.weaponsSystem[obj_player2.plyr_currentWep, obj_player2.ammoNow]));
-        
-        draw_text(512, 976, con_game.player_name[2]);
-    }
-    else
-    {
-        //Player 2 HUD stuff
-        draw_set_halign(0);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(512, 921, "0");
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(640, 936, "0");
-        
-        draw_text(512, 976, con_game.player_name[2]);
+        if (instance_exists(obj_player1))
+        {
+            draw_set_halign(0);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(32, 921, string(obj_player1.plyr_health));
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(160, 936, string(obj_player1.weaponsSystem[obj_player1.plyr_currentWep, obj_player1.ammoNow]));
+            
+            draw_text(32, 976, con_game.player_name[1]);
+        }
+        else
+        {
+            draw_set_halign(0);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(32, 921, "0");
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(160, 936, "0");
+            
+            draw_text(32, 976, con_game.player_name[1]);
+        }
     }
     
-    if (instance_exists(obj_player3))
+    if (global.game_playerTeam[2] != 5)
     {
-        //Player 3 HUD stuff
-        draw_set_halign(2);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(1408, 921, string(obj_player3.plyr_health));
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(1280, 936, string(obj_player3.weaponsSystem[obj_player3.plyr_currentWep, obj_player3.ammoNow]));
-        
-        draw_text(1408, 976, con_game.player_name[3]);
-    }
-    else
-    {
-        //Player 3 HUD stuff
-        draw_set_halign(2);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(1408, 921, "0");
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(1280, 936, "0");
-        
-        draw_text(1408, 976, con_game.player_name[3]);
+        if (instance_exists(obj_player2))
+        {
+            //Player 2 HUD stuff
+            draw_set_halign(0);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(512, 921, string(obj_player2.plyr_health));
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(640, 936, string(obj_player2.weaponsSystem[obj_player2.plyr_currentWep, obj_player2.ammoNow]));
+            
+            draw_text(512, 976, con_game.player_name[2]);
+        }
+        else
+        {
+            //Player 2 HUD stuff
+            draw_set_halign(0);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(512, 921, "0");
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(640, 936, "0");
+            
+            draw_text(512, 976, con_game.player_name[2]);
+        }
     }
     
-    if (instance_exists(obj_player4))
+    if (global.game_playerTeam[3] != 5)
     {
-        //Player 4 HUD stuff
-        draw_set_halign(2);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(1888, 921, string(obj_player4.plyr_health));
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(1760, 936, string(obj_player4.weaponsSystem[obj_player4.plyr_currentWep, obj_player4.ammoNow]));
-        
-        draw_text(1888, 976, con_game.player_name[4]);
+        if (instance_exists(obj_player3))
+        {
+            //Player 3 HUD stuff
+            draw_set_halign(2);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(1408, 921, string(obj_player3.plyr_health));
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(1280, 936, string(obj_player3.weaponsSystem[obj_player3.plyr_currentWep, obj_player3.ammoNow]));
+            
+            draw_text(1408, 976, con_game.player_name[3]);
+        }
+        else
+        {
+            //Player 3 HUD stuff
+            draw_set_halign(2);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(1408, 921, "0");
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(1280, 936, "0");
+            
+            draw_text(1408, 976, con_game.player_name[3]);
+        }
     }
-    else
+    
+    if (global.game_playerTeam[4] != 5)
     {
-        //Player 4 HUD stuff
-        draw_set_halign(2);
-        draw_set_valign(1);
-        draw_set_colour(c_white);
-        
-        draw_set_font(fnt_roboto_50);
-        draw_text(1888, 921, "0");
-        
-        draw_set_font(fnt_roboto_25);
-        draw_text(1760, 936, "0");
-        
-        draw_text(1888, 976, con_game.player_name[4]);
+        if (instance_exists(obj_player4))
+        {
+            //Player 4 HUD stuff
+            draw_set_halign(2);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(1888, 921, string(obj_player4.plyr_health));
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(1760, 936, string(obj_player4.weaponsSystem[obj_player4.plyr_currentWep, obj_player4.ammoNow]));
+            
+            draw_text(1888, 976, con_game.player_name[4]);
+        }
+        else
+        {
+            //Player 4 HUD stuff
+            draw_set_halign(2);
+            draw_set_valign(1);
+            draw_set_colour(c_white);
+            
+            draw_set_font(fnt_roboto_50);
+            draw_text(1888, 921, "0");
+            
+            draw_set_font(fnt_roboto_25);
+            draw_text(1760, 936, "0");
+            
+            draw_text(1888, 976, con_game.player_name[4]);
+        }
     }
     
     //Draw Team HUD Info
