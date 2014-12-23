@@ -33,7 +33,7 @@
 //Change These
 acc       = 0.7;
 deacc     = 0.5;
-maxvspeed = 8;
+maxvspeed = 12;
 maxhspeed = 7;
 
 //ice physics
