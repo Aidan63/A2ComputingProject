@@ -21,4 +21,3 @@ switch (menu_realVsync)
     break;
 }
 
-

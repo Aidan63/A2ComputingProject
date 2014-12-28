@@ -55,4 +55,3 @@ for (var i = 0; i < ds_list_size(inputs); i++)
 ds_list_destroy(inputs);
 
 return input_down;
-

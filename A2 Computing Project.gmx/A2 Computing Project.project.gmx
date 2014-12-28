@@ -90,7 +90,9 @@
       <filename>level5.txt</filename>
     </datafile>
   </datafiles>
-  <NewExtensions/>
+  <NewExtensions>
+    <extension index="0">extensions\Draw Trail</extension>
+  </NewExtensions>
   <sounds name="sound">
     <sounds name="Weapons">
       <sound>sound\snd_effect_mg</sound>
@@ -252,6 +254,12 @@
         <script>scripts\unifiedInput_gamepad_keyName.gml</script>
         <script>scripts\unifiedInput_keyboard_keyName.gml</script>
         <script>scripts\unifiedInput_gamepad_get_down.gml</script>
+      </scripts>
+      <scripts name="Draw Trail">
+        <script>scripts\trail_create.gml</script>
+        <script>scripts\trail_calculate.gml</script>
+        <script>scripts\trail_draw.gml</script>
+        <script>scripts\trail_destroy.gml</script>
       </scripts>
     </scripts>
     <scripts name="Menus">

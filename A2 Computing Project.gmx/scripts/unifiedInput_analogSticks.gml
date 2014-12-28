@@ -64,4 +64,3 @@ switch (input)
 }
 
 return false;
-
