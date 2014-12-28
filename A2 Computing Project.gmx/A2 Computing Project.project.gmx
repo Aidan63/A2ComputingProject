@@ -200,11 +200,9 @@
         <sprite>sprites\spr_block_solid</sprite>
       </sprites>
       <sprites name="Projectiles">
-        <sprite>sprites\spr_projectile_bullet</sprite>
         <sprite>sprites\spr_projectile_rocket</sprite>
         <sprite>sprites\spr_projectile_grenade</sprite>
         <sprite>sprites\spr_projectile_plasma</sprite>
-        <sprite>sprites\spr_projectile_hit</sprite>
       </sprites>
       <sprites name="Explosions">
         <sprite>sprites\spr_explosion_small</sprite>
@@ -326,11 +324,9 @@
       </objects>
       <objects name="Projectiles">
         <object>objects\par_projectile</object>
-        <object>objects\obj_projectile_bullet</object>
         <object>objects\obj_projectile_rocket</object>
         <object>objects\obj_projectile_grenade</object>
         <object>objects\obj_projectile_plasma</object>
-        <object>objects\obj_projectile_hit</object>
       </objects>
       <objects name="Explosions">
         <object>objects\par_explosion</object>
